@@ -1,0 +1,32 @@
+{
+  "name": "playground-puppeteer",
+  "version": "1.0.0",
+  "description": "Playground for experimenting with google/puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha index.js --opts mocha.opts",
+    "test:gui" : "PUPPETEER_HEADLESS=false npm test",
+    "screenshot": "node screenshot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UsainBloot/playground-puppeteer.git"
+  },
+  "keywords": [
+    "google",
+    "chrome",
+    "headless",
+    "puppeteer",
+    "playground"
+  ],
+  "author": "Jack Palmer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UsainBloot/playground-puppeteer/issues"
+  },
+  "homepage": "https://github.com/UsainBloot/playground-puppeteer#readme",
+  "dependencies": {
+    "mocha": "^3.5.0",
+    "puppeteer": "^0.10.2"
+  }
+}
