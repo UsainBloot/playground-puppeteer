@@ -11,4 +11,6 @@ async function screenshot(url) {
   browser.close();
 }
 
-screenshot('http://cultofthepartyparrot.com/');
+const ARG_URL = process.env.URL || 'http://cultofthepartyparrot.com/';
+
+screenshot(ARG_URL);

@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha index.js --opts mocha.opts",
-    "test:gui" : "PUPPETEER_HEADLESS=false npm test",
-    "screenshot": "node screenshot.js"
+    "test:gui": "PUPPETEER_HEADLESS=false npm test",
+    "screenshot": "node screenshot.js && open screenshot.png"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,9 @@
   },
   "homepage": "https://github.com/UsainBloot/playground-puppeteer#readme",
   "dependencies": {
-    "mocha": "^3.5.0",
     "puppeteer": "^0.10.2"
+  },
+  "devDependencies": {
+    "mocha": "^3.5.0"
   }
 }
