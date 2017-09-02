@@ -1,4 +1,6 @@
 # playground-puppeteer
+[![Build Status](https://travis-ci.org/UsainBloot/playground-puppeteer.svg?branch=master)](https://travis-ci.org/UsainBloot/playground-puppeteer)
+
 Playground for experimenting with GoogleChrome/puppeteer
 
 ## Run tests
