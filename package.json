@@ -2,9 +2,9 @@
   "name": "playground-puppeteer",
   "version": "1.0.0",
   "description": "Playground for experimenting with google/puppeteer",
-  "main": "index.js",
+  "main": "screenshot.js",
   "scripts": {
-    "test": "mocha index.js --opts mocha.opts",
+    "test": "mocha test/**/*.js --opts test/mocha.opts",
     "test:gui": "PUPPETEER_HEADLESS=false npm test",
     "screenshot": "node screenshot.js && open screenshot.png"
   },
