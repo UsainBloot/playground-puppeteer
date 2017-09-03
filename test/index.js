@@ -35,9 +35,11 @@ describe('Google Chrome Puppeteer - iPlayer Channel A to Z', () => {
   });
 
   it('has the first page selected and not clickable', async () => {
-    const firstPaginationTag = await page.$eval('.pagination__item--page .button', el => el.tagName);
+    const firstPaginationClasses = await page.$eval('.pagination__item--page .button', el => Object.values(el.classList));
+    const firstPaginationTagName = await page.$eval('.pagination__item--page .button', el => el.tagName);
 
-    assert.equal(firstPaginationTag, 'SPAN');
+    assert(firstPaginationClasses.includes('button--active'));
+    assert.equal(firstPaginationTagName, 'SPAN');
   });
 
   it('has the next element disabled when on the last page', async () => {
