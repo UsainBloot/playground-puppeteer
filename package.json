@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha test/**/*.js --opts test/mocha.opts",
     "test:gui": "PUPPETEER_HEADLESS=false npm test",
-    "screenshot": "node screenshot.js && open screenshot.png"
+    "screenshot": "node screenshot.js && open screenshot.png",
+    "githubAvatar": "node githubAvatar.js && open avatar.png"
   },
   "repository": {
     "type": "git",

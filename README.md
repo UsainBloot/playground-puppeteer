@@ -25,3 +25,8 @@ npm run test:gui
 ```
 URL=http://some.website npm run screenshot
 ```
+
+### Screenshot a GitHub Avatar
+```
+GITHUB_USER=someuser npm run githubAvatar
+```
